@@ -7,6 +7,23 @@
 */
 
 // Start coding here
+function generatePattern(size) {
+    let result = '';
+  
+    for (let i = size; i >= 1; i--) {
+      let row = '';
+      for (let j = 1; j <= i; j++) {
+        row += '*';
+        if (j < i) {
+          row += ' ';
+        }
+      }
+      result += row + '\n';
+    }
+  
+    return result;
+  }
+  
 
 console.log(generatePattern(3)); 
 
