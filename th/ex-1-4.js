@@ -13,6 +13,7 @@ function showStudentsData(studentInfo){
     for(let key in student){
       result += `${key}: ${student[key]} \n`;
     }
+    result += `-------------------\n`;
   }
   return result;
 }
